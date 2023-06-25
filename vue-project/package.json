@@ -1,5 +1,5 @@
 {
-  "name": "vue-project",
+  "name": "persian-components-documentation",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "persian-components": "^0.0.6",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2"
   },
