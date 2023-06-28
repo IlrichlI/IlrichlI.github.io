@@ -7,8 +7,16 @@ import {
   PersianLinearLoading,
   PersianModal,
   PersianTooltip,
-  PersianTypography
-} from 'persian-components'
+  PersianTypography,
+  ControlledCheckbox,
+  SwitchField,
+  FormProvider,
+  SelectField,
+  ColorPicker,
+  TimePicker,
+  UploadField,
+  PersianTreeMap
+} from 'persian-components/dev'
 </script>
 
 <template>
@@ -65,6 +73,52 @@ import {
         <code>{{`<PersianCalendar />`}}</code>
         <PersianCalendar />
       </div>
+    </div>
+    <div style="display: flex; gap: 40px">
+      <div style="width: 50%; display: flex; flex-direction: column; margin-bottom: 40px">
+        <code>{{`<ControlledCheckbox />`}}</code>
+        <FormProvider name="aaa">
+          <ControlledCheckbox label="test" id="test" />
+        </FormProvider>
+      </div>
+      <div style="width: 50%; display: flex; flex-direction: column; margin-bottom: 40px">
+        <code>{{`<SwitchField />`}}</code>
+        <SwitchField label="test SwitchField " id="aaaasdas" />
+      </div>
+    </div>
+    <div style="display: flex; gap: 40px">
+      <div style="width: 50%; display: flex; flex-direction: column; margin-bottom: 40px">
+        <code>{{`<SelectField />`}}</code>
+        <SelectField
+          :options="[
+            { value: 'option1', label: 'Option 1' },
+            { value: 'option2', label: 'Option 2' },
+            { value: 'option3', label: 'Option 3' }
+          ]"
+          id="asd"
+        />
+      </div>
+      <div style="width: 50%; display: flex; flex-direction: column; margin-bottom: 40px">
+        <code>{{`<ColorPicker />`}}</code>
+        <ColorPicker />
+      </div>
+    </div>
+    <div style="display: flex; gap: 40px">
+      <div style="width: 50%; display: flex; flex-direction: column; margin-bottom: 40px">
+        <code>{{`<TimePicker />`}}</code>
+        <TimePicker />
+      </div>
+      <div style="width: 50%; display: flex; flex-direction: column; margin-bottom: 40px">
+        <code>{{`<UploadField />`}}</code>
+        <UploadField />
+      </div>
+    </div>
+    <div style="display: flex; gap: 40px">
+      <div style="width: 50%; display: flex; flex-direction: column; margin-bottom: 40px">
+        <code>{{`<PersianTreeMap />`}}</code>
+        <PersianTreeMap />
+      </div>
+      <div style="width: 50%; display: flex; flex-direction: column; margin-bottom: 40px"></div>
     </div>
   </div>
 </template>
